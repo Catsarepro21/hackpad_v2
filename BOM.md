@@ -1,11 +1,3 @@
-# Wireless macropad — parts and purchasing budget
-
-Revision D • USD • checked 15 October 2026 • no parts purchased
-
-**Budgeted parts, minimum buy quantities and printing: $41.80 before shipping/tax.** Of this, $35.00 comes from listed prices; $6.80 is explicitly estimated. This is not a delivered checkout quote. Existing parts have $0 additional cost, not $0 replacement value.
-
-For planning, reserve **about $55–75 delivered** if tools and printer access are already available. This is an allowance, not a shipping/tax quote. Separate vendors, battery ground shipping and tariffs can change it. Commercial printing or buying soldering equipment is extra.
-
 ## Already owned or recovered
 
 | Item | Required | Additional cost | Notes |
@@ -46,23 +38,3 @@ For planning, reserve **about $55–75 delivered** if tools and printer access a
 | Battery leads | Flexible insulated26–28AWG copper wire; short red/black pair | 1 / 1 | $1.00 | Budget allowance for usable wire; full spool extra; allowance |
 | PCB | 84x78mm2layer1.6mmFR4 bare PCB | 1 / 5 | $2.00 | Unquoted introductory-price estimate; allow$2–5 batch; [source](https://jlcpcb.com/) |
 | Case | Base+cover printedPLA/PETG | 1 / 1 | $1.50 | Material estimate; machine/service fees excluded; allowance |
-
-## Choices and critique
-
-The $55–75 planning range assumes consolidating purchases into two or three shipments, with tools and printer access already available. The source links identify parts; they are not instructions to place six separate store orders. Buying separately from every linked store can exceed that allowance. Buy compatible generic sockets/headers with the small-component order, and combine the controller, inductor and battery with one domestic supplier where available. Recheck its stock and prices before checkout. There is no final shipping, tax or tariff quote.
-
-The XIAO already provides the charger; buying a TP4056 adds cost and is unnecessary. The RGB boost converter and I/O expander are needed for this selected controller/layout, so the new purchases are more than just a battery. The reference battery is chosen for its documented1.5A discharge rating and case footprint. Cheaper unbranded cells with only a capacity label are not equivalent.
-
-[Adafruit2581200mAh](https://www.adafruit.com/product/258) is$9.95, saving$6 at the item price, but measures62x34x5mm and is rated1.2A continuous by its linked datasheet. It needs changed battery guides and a rechecked power budget; it is excluded from the primary total.
-
-Gemini Argon reviewed the topology and BOM in multiple exchanges. Accepted points: account for minimum orders, check recoverable LED quantity, test desoldered encoders/LEDs, include wire/socket costs and a realistic soldering process. The original slide switch full-load current issue is corrected byQ1/Q2+R9/R10. Gemini initially invented several specifications and later retracted them; the audit report distinguishes manufacturer evidence from model opinion.
-
-Keep twelve usable LEDs in the inventory. If salvage fails, buy fresh exactSK6812MINI-E spares; **their replacement price and shipping are not quoted in this total**. Two encoder knobs may be reused if owned; otherwise print or buy after measuring the shafts. Optional rubber feet, USB-C data cable, solder, flux, paste, tweezers, heat-set installation tool and hot-air/reflow access are not confirmed owned. They are excluded from the subtotal; allow$3–8 for small consumables/knobs/feet if needed, and obtain a separate quote for tools or assembly services.
-
-The tinyTPS61023 SOT563 is1.6x1.2mm. A successful through-hole Hackpad build does not prove that this assembly process is available. Borrowing suitable equipment can be cheaper than buying it.
-
-## Before ordering
-
-Confirm actual battery/header dimensions and polarity, print an insert-hole coupon, count/test reusable parts, verify selected capacitor DC-bias data, and finish firmware/current measurements. The motherboard has not been manufactured or bench-tested. Budget25% RGB brightness initially; do not assume full white fits a500mA USB source. Charging is intentionally disabled when the battery switch isOFF.
-
-No OLED is included; the lost display and the oldRP2040 are not purchases for this design.
