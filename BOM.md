@@ -40,6 +40,3 @@
 | Battery leads | 26–28 AWG insulated wire, red/black pair | 1 | 1 | $1.00 | — |
 | PCB | 84 × 78 mm, 2-layer, 1.6 mm FR4 PCB | 1 | 5 | $2.00 | [Buy](https://jlcpcb.com/) |
 | Case | PLA/PETG base and cover | 1 | 1 | $1.50 | — |
-
-- The XIAO includes the charger. Male headers may also be included; check before buying.
-- Count 12 working LEDs; recover any missing LEDs and both encoders from the old pad.
