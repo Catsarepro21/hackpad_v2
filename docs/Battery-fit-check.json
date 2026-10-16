@@ -1,0 +1,18 @@
+{
+  "battery_clearance_envelope_mm": [
+    66,
+    38,
+    7
+  ],
+  "battery_center_mm": [
+    91,
+    -117,
+    -12.5
+  ],
+  "base_overlap_mm3": 0.0,
+  "plate_overlap_mm3": 0.0,
+  "pcb_hits": [],
+  "base_valid": true,
+  "plate_valid": true,
+  "base_plate_overlap_mm3": 0.0
+}
