@@ -1,32 +1,32 @@
-references,part,quantity_used,quantity_to_buy,unit_USD,purchase_USD,status,source,notes
-SW1–SW6,MX-style PCB switches,6,0,0,0,Owned,,Six spare switches; brand/model unspecified. Compare physical pins to footprint.
-Keycaps,White blank DSA MX keycaps,6,0,0,0,Owned,,"Opaque: light mainly around cap edges, depends on switch housing."
-D1–D8,1N4148 DO-35,8,0,0,0,Owned / count,,Count eight usable diodes; cathode stripe to row. Test matrix low voltage.
-"ENC1,ENC2",EC11E with push switch,2,0,0,0,Recover old pad,,Test A/C/B contacts and both pushbuttons after removal; do not assume Alps brand.
-LED1–LED12,SK6812 MINI-E reverse mount,12,0,0,0,Owned / recover,,"Kit had16 total. If old pad used6, only10 loose remain; recover2 or buy spares. Test full data chain."
-Mounts,M3x16 screws,4,0,0,0,Owned,,
-Inserts,M3 brass heat-set; 5mm OD x4mm long,4,0,0,0,Owned,,4.6mm CAD pilot holes need print-fit coupon.
-U1,Seeed XIAO ESP32-S3 113991114 (regular),1,1,7.49,7.49,Buy,https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html,Includes onboard 1S charger and external antenna; do not buy Sense/Plus or bare module.
-U2,Microchip MCP23008-E/P PDIP-18,1,1,1.8115,1.8115,Buy,https://www.lcsc.com/product-detail/C646745.html,PDIP package essential; cheaper SOIC/QFN is not drop-in.
-U3,TI TPS61023DRLR SOT-563,1,5,0.268,1.34,Buy,https://www.lcsc.com/product-detail/C919459.html,"MOQ5; use1, keep4 spares. Plan reflow/hot-air assembly."
-U4,TI SN74AHCT1G125DBVR SOT-23-5,1,5,0.1011,0.5055,Buy,https://www.lcsc.com/product-detail/C7484.html,"MOQ5; AHCT TTL input required, do not substitute plain HC125."
-"Q1,Q2",AOS AO3401A P-channel SOT-23,2,10,0.0589,0.589,Buy,https://www.lcsc.com/product-detail/C15127.html,Common-source pair bypasses battery load around slide-switch contacts.
-SW7,C&K JS102011SAQN,1,1,0.8678,0.8678,Buy,https://www.lcsc.com/product-detail/C221660.html,Only gate-control current in revisionD;0.3A rating unsuitable for full load direct switching.
-L1,Bourns SRP5030T-1R0M 1uH,1,1,1.1,1.1,Buy,https://www.digikey.com/en/products/detail/bourns-inc/SRP5030T-1R0M/3986079,Exact footprint selected; no unverified generic5030 substitution.
-"D9,D10",MDD SS34 SMA,2,20,0.0352,0.704,Buy,https://www.lcsc.com/product-detail/C8678.html,MOQ20; two used. Band/cathode toward BOOST_IN.
-"C1,C2,C6–C18",Yageo CC0805KRX7R9BB104 100nF50VX7R0805,15,20,0.0189,0.378,Buy,https://www.lcsc.com/product-detail/C49678.html,"15 used,20 minimum order."
-C3,KEMET C1206C106K8RACTU 10uF10VX7R1206,1,5,0.1316,0.658,Buy,https://www.lcsc.com/product-detail/C2167669.html,Stock5 when checked. Effective capacitance/DC-bias verification remains required.
-"C4,C5",Samsung CL32B226KOJNFNE 22uF16VX7R1210,2,5,0.2806,1.403,Buy,https://www.lcsc.com/product-detail/C16196563.html,16V matches revised schematic; correct1210 package. Verify effective capacitance at5V and feedforward condition.
-"R1,R2",UNI-ROYAL 0805W8F4701T5E 4.7k1%,2,100,0.0051,0.51,Buy,https://www.lcsc.com/product-detail/C17673.html,"0805,1/8W; MOQ cost includes unused spares."
-R3,UNI-ROYAL 0805W8F1002T5E 10k1%,1,100,0.0034,0.34,Buy,https://www.lcsc.com/product-detail/C17414.html,"0805,1/8W; MOQ cost includes unused spares."
-R4,UNI-ROYAL 0805W8F7323T5E 732k1%,1,100,0.0029,0.29,Buy,https://www.lcsc.com/product-detail/C17816.html,"0805,1/8W; MOQ cost includes unused spares."
-"R5,R6,R8,R9",UNI-ROYAL 0805W8F1003T5E 100k1%,4,100,0.006,0.6,Buy,https://www.lcsc.com/product-detail/C149504.html,"0805,1/8W; MOQ cost includes unused spares."
-R7,UNI-ROYAL 0805W8F3300T5E 330ohm1%,1,100,0.005,0.5,Buy,https://www.lcsc.com/product-detail/C17630.html,"0805,1/8W; MOQ cost includes unused spares."
-R10,UNI-ROYAL 0805W8F1001T5E 1k1%,1,100,0.0035,0.35,Buy,https://www.lcsc.com/product-detail/C17513.html,"0805,1/8W; MOQ cost includes unused spares."
-J1,JST B2B-PH-K-S(LF)(SN) vertical2mm,1,20,0.0357,0.714,Buy,https://www.lcsc.com/product-detail/C131337.html,MOQ20; battery includes mating plug. Measure polarity before connecting.
-U1 sockets,2.54mm1x7 straight female socket strip,2,2,0.5,1.0,Buy,https://www.pololu.com/product/1017,Generic equivalent permissible; verify housing height with cover. Consolidate store orders.
-U1 headers,2.54mm1x7 male header,2,2,0.1,0.2,Conditional buy,,Budget includes these; omit if supplied with XIAO. Package contents can vary.
-BAT1,SparkFun PRT-26059 protected1S1500mAh,1,1,15.95,15.95,Buy,https://www.sparkfun.com/lithium-ion-battery-1500mah-iec62133-certified.html,LP783450;1.5A continuous;2–2.5A protection trip; Pack51+/-1 x34+/-0.5 x7.8+/-0.3mm;54x37x9mm CAD clearance envelope. Charging through XIAO; no separate charger.
-Battery leads,Flexible insulated26–28AWG copper wire; short red/black pair,1,1,1,1,Buy / check stock,,Short leads to XIAO underside battery pads. Leave service slack and insulate; do not buy another charger.
-PCB,84x78mm2layer1.6mmFR4 bare PCB,1,5,0.4,2.0,Fabricate,https://jlcpcb.com/,Five-board order estimated$2 before shipping; not a submitted fab quote. No assembly included.
-Case,Base+cover printedPLA/PETG,1,1,1.5,1.5,Print,
+﻿references,part,quantity_used,quantity_to_buy,unit_USD,purchase_USD,status,source
+SW1–SW6,MX-style PCB switches,6,0,0,0.00,Owned,
+Keycaps,White blank DSA MX keycaps,6,0,0,0.00,Owned,
+D1–D8,1N4148 DO-35,8,0,0,0.00,Owned,
+"ENC1,ENC2",EC11E with push switch,2,0,0,0.00,Recover old pad,
+LED1–LED12,SK6812 MINI-E reverse mount,12,0,0,0.00,Owned / salvage,
+Mounts,M3x16 screws,4,0,0,0.00,Owned,
+Inserts,"M3 heat-set inserts, 5 mm OD × 4 mm long",4,0,0,0.00,Owned,
+U1,Seeed XIAO ESP32-S3 113991114 (regular),1,1,7.49,7.49,Buy,https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html
+U2,Microchip MCP23008-E/P PDIP-18,1,1,1.8115,1.81,Buy,https://www.lcsc.com/product-detail/C646745.html
+U3,TI TPS61023DRLR SOT-563,1,5,0.268,1.34,Buy,https://www.lcsc.com/product-detail/C919459.html
+U4,TI SN74AHCT1G125DBVR SOT-23-5,1,5,0.1011,0.51,Buy,https://www.lcsc.com/product-detail/C7484.html
+"Q1,Q2",AOS AO3401A P-channel SOT-23,2,10,0.0589,0.59,Buy,https://www.lcsc.com/product-detail/C15127.html
+SW7,C&K JS102011SAQN,1,1,0.8678,0.87,Buy,https://www.lcsc.com/product-detail/C221660.html
+L1,Bourns SRP5030T-1R0M 1uH,1,1,1.1,1.10,Buy,https://www.digikey.com/en/products/detail/bourns-inc/SRP5030T-1R0M/3986079
+"D9,D10",MDD SS34 SMA,2,20,0.0352,0.70,Buy,https://www.lcsc.com/product-detail/C8678.html
+"C1,C2,C6–C18","Yageo CC0805KRX7R9BB104 — 100 nF, 50 V, X7R, 0805",15,20,0.0189,0.38,Buy,https://www.lcsc.com/product-detail/C49678.html
+C3,"KEMET C1206C106K8RACTU — 10 µF, 10 V, X7R, 1206",1,5,0.1316,0.66,Buy,https://www.lcsc.com/product-detail/C2167669.html
+"C4,C5","Samsung CL32B226KOJNFNE — 22 µF, 16 V, X7R, 1210",2,5,0.2806,1.40,Buy,https://www.lcsc.com/product-detail/C16196563.html
+"R1,R2",UNI-ROYAL 0805W8F4701T5E 4.7k1%,2,100,0.0051,0.51,Buy,https://www.lcsc.com/product-detail/C17673.html
+R3,UNI-ROYAL 0805W8F1002T5E 10k1%,1,100,0.0034,0.34,Buy,https://www.lcsc.com/product-detail/C17414.html
+R4,UNI-ROYAL 0805W8F7323T5E 732k1%,1,100,0.0029,0.29,Buy,https://www.lcsc.com/product-detail/C17816.html
+"R5,R6,R8,R9",UNI-ROYAL 0805W8F1003T5E 100k1%,4,100,0.006,0.60,Buy,https://www.lcsc.com/product-detail/C149504.html
+R7,UNI-ROYAL 0805W8F3300T5E 330ohm1%,1,100,0.005,0.50,Buy,https://www.lcsc.com/product-detail/C17630.html
+R10,UNI-ROYAL 0805W8F1001T5E 1k1%,1,100,0.0035,0.35,Buy,https://www.lcsc.com/product-detail/C17513.html
+J1,"JST B2B-PH-K-S(LF)(SN), vertical 2 mm",1,20,0.0357,0.71,Buy,https://www.lcsc.com/product-detail/C131337.html
+U1 sockets,2.54 mm 1×7 female socket strip,2,2,0.5,1.00,Buy,https://www.pololu.com/product/1017
+U1 headers,2.54 mm 1×7 male header,2,2,0.1,0.20,Conditional buy,
+BAT1,SparkFun PRT-26059 — protected 1S 1500 mAh LiPo,1,1,15.95,15.95,Buy,https://www.sparkfun.com/lithium-ion-battery-1500mah-iec62133-certified.html
+Battery leads,"26–28 AWG insulated wire, red/black pair",1,1,1,1.00,Buy if needed,
+PCB,"84 × 78 mm, 2-layer, 1.6 mm FR4 PCB",1,5,0.4,2.00,Fabricate,https://jlcpcb.com/
+Case,PLA/PETG base and cover,1,1,1.5,1.50,Print,
