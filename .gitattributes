@@ -1,0 +1,6 @@
+* text=auto
+*.step -text
+*.STEP -text
+*.zip binary
+*.png binary
+*.jpg binary

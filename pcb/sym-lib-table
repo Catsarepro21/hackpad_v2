@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Macropad")(type "KiCad")(uri "${KIPRJMOD}/Macropad.kicad_sym")(options "")(descr ""))
+)

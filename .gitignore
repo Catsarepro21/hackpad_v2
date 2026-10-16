@@ -1,0 +1,5 @@
+*.lck
+*.kicad_prl
+*-backups/
+*.bak
+.DS_Store
