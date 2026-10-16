@@ -1,6 +1,6 @@
 # hackpad_v2
 
-A wireless six-key macropad with a Seeed XIAO ESP32-S3, two clickable rotary encoders, and twelve SK6812 MINI-E RGB LEDs. Revision D uses 19.05 mm key spacing and an internal battery connector, uses parts left over from my other hackpad, which was much worse.
+A wireless six-key macropad with a Seeed XIAO ESP32-S3, two clickable rotary encoders, and twelve SK6812 MINI-E RGB LEDs. It uses normal 19.05 mm key spacing and an internal battery connector, uses parts left over from my other hackpad, which was much worse.
 
 ![Macropad enclosure](images/Onshape-enclosure.jpg)
 
