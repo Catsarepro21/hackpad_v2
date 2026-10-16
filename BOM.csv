@@ -27,6 +27,6 @@ J1,"JST B2B-PH-K-S(LF)(SN), vertical 2 mm",1,20,0.0357,0.71,Buy,https://www.lcsc
 U1 sockets,2.54 mm 1×7 female socket strip,2,2,0.5,1.00,Buy,https://www.pololu.com/product/1017
 U1 headers,2.54 mm 1×7 male header,2,2,0.1,0.20,Conditional buy,
 BAT1,SparkFun PRT-26059 — protected 1S 1500 mAh LiPo,1,1,15.95,15.95,Buy,https://www.sparkfun.com/lithium-ion-battery-1500mah-iec62133-certified.html
-Battery leads,"26–28 AWG insulated wire, red/black pair",1,1,1,1.00,Buy if needed,
+Battery leads,"26–28 AWG insulated wire, red/black pair",1,1,1,1.00,Buy,
 PCB,"84 × 78 mm, 2-layer, 1.6 mm FR4 PCB",1,5,0.4,2.00,Fabricate,https://jlcpcb.com/
-Case,PLA/PETG base and cover,1,1,1.5,1.50,Print,
+Case,PLA/PETG base and cover,1,1,1.5,1.50,Print(Printing legion??),
