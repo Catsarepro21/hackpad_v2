@@ -1,7 +1,5 @@
 # Bill of materials
 
-**Estimated total: $41.80 USD**, including minimum purchase quantities and case material. Excludes shipping, tax, tools and printing service fees.
-
 ## Owned / reused
 
 | Part | Quantity | Status |
