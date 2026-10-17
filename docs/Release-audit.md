@@ -10,7 +10,7 @@ Final KiCad checks report zero ERC violations, zero DRC violations, zero unconne
 
 The PCB STEP was regenerated directly from the current native PCB, including DNP component models. Nine broken model references were removed or replaced while retaining the valid local encoder and MX models. SW7 previously had no usable model. Its replacement is a conservative C&K JS102011SAQN clearance envelope, including both actuator positions, not a vendor cosmetic model. Its 9 x 3.6 x 3.5 mm body and 2 mm actuator travel follow the manufacturer drawing. The switch cover opening was widened inward by 1.2 mm, preserving the case exterior and mounting locations. The previous cover overlapped the switch body by 0.8 mm (10.8 cubic mm); the corrected opening provides 0.4 mm nominal clearance at that edge.
 
-The regenerated complete and exploded assemblies include this switch envelope. The battery envelope and reserve, case validity, tray/plate separation, and PCB-to-case checks are recorded in the JSON reports.
+The regenerated complete and exploded assemblies include this switch envelope. PCB-to-case and board parity checks are recorded in the adjacent JSON reports; battery and electrical reports are retained in the local release download.
 
 ## Release holds
 
