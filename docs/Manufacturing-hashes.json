@@ -1,9 +1,0 @@
-{
-  "manufacturing\\Gerbers-and-drills.zip": "b904fcbff838ab8d24d9cac49cdb8d7b6bd3c6d4b2afd040c73f28e5a2e0180e",
-  "pcb\\Build_Options.kicad_sch": "772a1624fd6ec3c8404808bc2037960e775d254256121c5a663f261d25ed322a",
-  "pcb\\Fabricate_Wireless_Macropad.kicad_pcb": "1c21cfd35978bbe99fe4280ff0050ea6025f2528c88f8b543be63edd2010df24",
-  "pcb\\Fabricate_Wireless_Macropad.kicad_sch": "da2a81e97de741be989f50b6f53e7ffb664a7052f18937d470dc2f36d1a7a307",
-  "pcb\\Input_Expansion.kicad_sch": "3eafbd17978080791a5f7d278dc2d1464d1c63f4b5d041a2ec68c4ba3e273dbe",
-  "pcb\\RGB_LEDs.kicad_sch": "7cb002df053885e11243d2d5c171e6a0968d473a6ac4bf58243bde12a5f62dfa",
-  "pcb\\RGB_Power.kicad_sch": "4fe62a6f729dd766568842c89e79e8adbe215a08982c5b1ddb25f52107729bf3"
-}
