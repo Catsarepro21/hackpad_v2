@@ -1,0 +1,1 @@
+SW7 clearance envelope, not a vendor cosmetic model. See ../../docs/Release-audit.md for dimensions, source and limitations. Includes swept actuator travel. Model generation source: JS102011SAQN_clearance_envelope.py.

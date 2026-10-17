@@ -483,17 +483,6 @@
 			(uuid "d4ccb22d-dac9-4205-a8a7-85f7a0edc976")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 		(model "${KIPRJMOD}/models/EC11-THT-20F-blue.step"
 			(offset
 				(xyz 7.5 -2.5 0.5)
@@ -880,17 +869,6 @@
 			(uuid "662792f1-8f88-4f93-b730-5497f7ca6791")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
 				(xyz -2.5 -4 0)
@@ -1182,17 +1160,6 @@
 			(uuid "b3f78e19-aa1d-48bd-98c4-7222fd55df68")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
 				(xyz -2.5 -4 0)
@@ -1484,17 +1451,6 @@
 			(uuid "7ed12c14-b1a7-4540-93aa-f094f4b8becb")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
-			(offset
-				(xyz -2.5 -5 8)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 -0 -0)
-			)
-		)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
 				(xyz -2.5 -4 0)
@@ -2328,17 +2284,6 @@
 			(uuid "d5f5915d-67fe-4413-aab3-daf1b26cf5e9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 		(model "${KIPRJMOD}/models/EC11-THT-20F-blue.step"
 			(offset
 				(xyz 7.5 -2.5 0)
@@ -2619,17 +2564,6 @@
 			(uuid "5d746680-9bac-4bb3-a5b1-a7c2630a573c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
 				(xyz -2.5 -4 0)
@@ -2921,17 +2855,6 @@
 			(uuid "7ccdc84e-4c0e-43ed-aeb2-f58e732c1614")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
 				(xyz -2.5 -4 0)
@@ -3654,7 +3577,7 @@
 			(uuid "bfbe518f-7dac-4b8a-9ff6-745799e007f7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPDT_CK_JS102011SAQN.step"
+		(model "${KIPRJMOD}/models/JS102011SAQN_clearance_envelope.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3934,17 +3857,6 @@
 			(uuid "4c3c553f-f862-4c6e-a4a4-671f7fded503")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_Keyboard.3dshapes/SW_Cherry_MX_1.00u_PCB.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
 				(xyz -2.5 -4 0)

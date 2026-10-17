@@ -22,7 +22,7 @@ for x,y in mounts:
  base=base.cut(cq.Workplane('XY').center(x,y).circle(2.3).extrude(4.4).translate((0,0,-4.4)))
 # USB cable access at the rear/top edge, switch access on the right.
 base=base.cut(box(91,-64,5,16,8,11))
-base=base.cut(box(133,-130,3,10,13,9))
+base=base.cut(box(132.4,-130,3,11.2,13,9))
 # Battery guides provide 40.2 mm width for the Adafruit 1578 clearance envelope.
 for x in [70,112]:base=base.union(box(x,-117,-15,1.8,33,2))
 # Plate thickness follows MX switch clips; tall encoder housings pass through square apertures.
@@ -35,7 +35,7 @@ plate=plate.cut(box(91,-64.5,4.25,16,8,4))
 # Battery connector access and battery-pad wire clearance.
 # J1 battery connector mounts inside below PCB; cover remains closed here.
 plate=plate.cut(cq.Workplane('XY').center(102.43,-86.62).circle(2.1).extrude(4).translate((0,0,2)))
-plate=plate.cut(box(133,-130,4.25,10,13,4))
+plate=plate.cut(box(132.4,-130,4.25,11.2,13,4))
 # Integral upper spacers stop the mounting screws crushing the 1.9 mm cover gap.
 for x,y in mounts:
  spacer=cq.Workplane('XY').center(x,y).circle(3.5).extrude(1.9).translate((0,0,1.6))
