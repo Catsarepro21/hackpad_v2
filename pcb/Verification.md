@@ -9,3 +9,5 @@ The Gerber/drill ZIP was exported from this checked board and includes both copp
 Battery CAD: valid single-solid tray and plate; zero tray/plate intersection. The 36x29x4.75mm battery envelope has zero interference with tray or plate. Its 40x33x7mm reserved volume has zero interference with the original fully populated PCB mechanical reference. The guide spacing is 40.2mm. Mounting locations and case exterior are unchanged. Flexible leads, adhesive/foam restraint, printed tolerance, antenna placement, USB/switch access and full assembly fit require physical verification. The new solder jumpers are flat copper and are not modeled in the STEP reference.
 
 Firmware was not modified. The old MCP23008 scanner requires adaptation for the direct matrix, and BLE HID operation remains unverified in hardware. Start RGB at brightness 64/255, keep Wi-Fi off on battery, and measure supply current before increasing brightness. Verify battery connector polarity before connection. Future battery RGB needs the JP7 bypass opened and battery discharge capacity checked.
+
+See [independent component and power review](../docs/Self-review.md) for the manual manufacturer cross-check.

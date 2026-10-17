@@ -41,3 +41,7 @@ Sources: [Seeed pin map](https://wiki.seeedstudio.com/xiao_esp32s3_getting_start
 ## Finding the jumpers
 
 Read the board from its underside, with the USB connector at the top. All jumpers have the same orientation: pad 1 is on the left; for three-pad jumpers pad 2 is the center and pad 3 the right. Use the reference labels and the native PCB assembly view to identify them; verify continuity before applying power.
+
+## Power and scanning notes
+
+Switch ON to charge the battery: SW7 disconnects the battery from both controller and charger when off. USB still powers the controller and RGB with the battery switch off. For matrix scanning, read columns with pull-ups and drive one row low at a time, leaving other rows high impedance. Disable UART0 TX on GPIO43 before using it as a column input. See [independent hardware review](../docs/Self-review.md) for the manufacturer checks and future boost-compensation note.
