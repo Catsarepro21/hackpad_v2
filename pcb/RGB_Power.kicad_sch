@@ -267,7 +267,12 @@
 			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+						(xy -1.905 0.635)
+						(xy -1.905 1.27)
+						(xy -1.27 1.27)
+						(xy -1.27 -1.27)
+						(xy -0.635 -1.27)
+						(xy -0.635 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -279,7 +284,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+						(xy 1.27 1.27)
+						(xy 1.27 -1.27)
+						(xy -1.27 0)
+						(xy 1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -291,7 +299,8 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 1.27 0)
+						(xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -612,7 +621,8 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -624,7 +634,8 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -899,7 +910,10 @@
 			(symbol "74AHCT1G125_0_1"
 				(polyline
 					(pts
-						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
+						(xy -7.62 6.35)
+						(xy -7.62 -6.35)
+						(xy 5.08 0)
+						(xy -7.62 6.35)
 					)
 					(stroke
 						(width 0.254)
@@ -1106,7 +1120,12 @@
 			(symbol "PWR_FLAG_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1129,7 +1148,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d80949db-43e1-48c4-b3d2-02c2ea21a6b2")
 		(property "Reference" "U3"
 			(at 127 50.8 0)
@@ -1224,7 +1243,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d7e83002-17dd-436a-9e1c-7fd88a544d9e")
 		(property "Reference" "D9"
 			(at 55.88 43.18 0)
@@ -1307,7 +1326,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "867ece76-abde-45a7-befc-55f26b69224f")
 		(property "Reference" "D10"
 			(at 55.88 71.12 0)
@@ -1390,7 +1409,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fa2b9a10-5dc4-4516-95c3-76cc08f4ae6c")
 		(property "Reference" "L1"
 			(at 119.38 29.21 0)
@@ -1445,12 +1464,24 @@
 				)
 			)
 		)
-    (property "MPN" "SRP5030T-1R0M" (at 119.38 35.56 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Manufacturer" "Bourns" (at 119.38 35.56 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "SRP5030T-1R0M"
+			(at 119.38 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 119.38 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "946c11c7-c128-46ce-9905-5eff3cefca9d")
 		)
@@ -1479,7 +1510,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "edbb7e6e-ee66-4eaa-8086-d33f8d038d0e")
 		(property "Reference" "C3"
 			(at 81.28 63.5 0)
@@ -1536,15 +1567,33 @@
 				)
 			)
 		)
-    (property "MPN" "C1206C106K8RACTU" (at 83.82 63.5 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Manufacturer" "KEMET" (at 83.82 63.5 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C2167669" (at 83.82 63.5 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "C1206C106K8RACTU"
+			(at 83.82 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 83.82 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2167669"
+			(at 83.82 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7de7a8bc-bcf4-4e51-8879-e128f8c87bc5")
 		)
@@ -1630,15 +1679,33 @@
 				)
 			)
 		)
-    (property "MPN" "CL32B226KOJNFNE" (at 170.18 43.18 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Manufacturer" "Samsung Electro-Mechanics" (at 170.18 43.18 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C16196563" (at 170.18 43.18 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "CL32B226KOJNFNE"
+			(at 170.18 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 170.18 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C16196563"
+			(at 170.18 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4be1be02-f979-4fac-949e-dcace70c1bdd")
 		)
@@ -1667,7 +1734,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e3fde2f5-071f-44fc-99e6-df5866510da1")
 		(property "Reference" "C5"
 			(at 205.74 43.18 0)
@@ -1724,15 +1791,33 @@
 				)
 			)
 		)
-    (property "MPN" "CL32B226KOJNFNE" (at 208.28 43.18 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Manufacturer" "Samsung Electro-Mechanics" (at 208.28 43.18 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C16196563" (at 208.28 43.18 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "CL32B226KOJNFNE"
+			(at 208.28 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 208.28 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C16196563"
+			(at 208.28 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b73af34e-fd54-4d4b-8d96-b1bc64f9d689")
 		)
@@ -1761,7 +1846,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7db7584e-ee83-4523-84f8-c4f8273ac9d2")
 		(property "Reference" "R4"
 			(at 175.26 71.12 0)
@@ -1844,10 +1929,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "faedc877-2856-4b56-b2f8-07d78b72845e")
 		(property "Reference" "R5"
-			(at 213.35999999999999 71.12 0)
+			(at 213.36 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1857,7 +1942,7 @@
 			)
 		)
 		(property "Value" "100k_1%"
-			(at 213.35999999999999 75 0)
+			(at 213.36 75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1927,7 +2012,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "37b252d3-3c82-4b50-8487-aa3eb4f8c956")
 		(property "Reference" "R6"
 			(at 81.28 93.98 0)
@@ -2405,7 +2490,7 @@
 		(uuid "9bc13a15-09ec-46c9-8894-699c6ad6d422")
 	)
 	(global_label "BOOST_IN"
-		(at 59.690000000000005 45.72 0)
+		(at 59.69 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2425,7 +2510,7 @@
 		(uuid "83a2e77e-a052-48ac-9524-0b02259ab1c9")
 	)
 	(global_label "BOOST_IN"
-		(at 59.690000000000005 73.66 0)
+		(at 59.69 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)

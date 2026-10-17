@@ -1,0 +1,53 @@
+{
+  "original_footprints_retained": 71,
+  "added_solder_jumpers": 7,
+  "all_original_placement_rotation_layer_and_footprint_ids_unchanged": true,
+  "netlisted_pins_match_pcb": 221,
+  "optional_dnp": [
+    "C2",
+    "C3",
+    "C5",
+    "D10",
+    "D9",
+    "L1",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "U2",
+    "U3"
+  ],
+  "both_jumper_configurations_connectivity_checks": "pass",
+  "jumper_positions_mm": {
+    "JP1": [
+      64,
+      98
+    ],
+    "JP2": [
+      64,
+      124
+    ],
+    "JP3": [
+      113,
+      94
+    ],
+    "JP4": [
+      64,
+      128
+    ],
+    "JP5": [
+      64,
+      135
+    ],
+    "JP6": [
+      65,
+      74
+    ],
+    "JP7": [
+      68,
+      70
+    ]
+  }
+}

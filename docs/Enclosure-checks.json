@@ -37,8 +37,8 @@
   "plate_bottom_z_mm": 3.5,
   "plate_top_z_mm": 5.0,
   "battery_reserve_mm": [
-    66,
-    38,
+    40,
+    33,
     7
   ],
   "battery_center_mm": [
@@ -47,5 +47,14 @@
     -12.5
   ],
   "integral_plate_spacers_mm": 1.9,
-  "base_plate_overlap_mm3": 0.0
+  "base_plate_overlap_mm3": 0.0,
+  "battery_mm": [
+    36,
+    29,
+    4.75
+  ],
+  "battery_to_base_overlap_mm3": 0.0,
+  "battery_to_plate_overlap_mm3": 0.0,
+  "reserve_to_pcb_overlap_mm3": 0.0,
+  "battery_fit_scope": "Rectangular manufacturer envelope; flexible leads, adhesive restraint and physical tolerances require assembly check."
 }

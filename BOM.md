@@ -1,55 +1,30 @@
-# Bill of materials
+# Simple build shopping list
 
-Prices checked October 16, 2026. All purchased electronics come from DigiKey.
+DigiKey cart Web ID **378036726**, checked October 16, 2026: **$23.57 parts + $8.49 estimated ground shipping + $2.01 estimated tariffs = $34.07 before sales tax**. All 14 lines showed Immediate availability; the cart also warns of an additional processing day. No LCSC order is needed for this population. Do not purchase both old carts and this one.
 
-| Cost | USD |
-|---|---:|
-| Electronics and battery | $32.81 |
-| Ground shipping estimate | $8.49 |
-| Project tariff estimate | $3.19 |
-| **Electronics delivered estimate, before tax** | **$44.49** |
+A rough 7.25-7.5% tax allowance gives about $36.54-$36.63 if applied to the entire $34.07; actual taxable base, delivery address and checkout determine the final total. ZIP 27560 alone does not establish an exact tax quote. PCB fabrication, its delivery, case printing and consumables remain unquoted. No order placed.
 
-PCB and printing are extra. The previous $2 PCB / $1.50 printing allowances are unverified and exclude PCB shipping. The previous two-store electronics estimate was $67.51; this saves $23.02.
+| Reference/use | Part | Needed | Cart quantity | Line USD |
+|---|---|---:|---:|---:|
+| U1 | XIAO ESP32-S3 113991114, 1597-113991114-ND | 1 | 1 | 7.49 |
+| J1 | B2B-PH-K-S, 455-1704-ND | 1 | 1 | 0.12 |
+| U1 sockets | PPTC071LFBN-RC, S7005-ND | 2 | 2 | 1.16 |
+| U1 male headers | Seeed 102010490 five-pack | 2 strips | 1 pack | 0.25 |
+| U4 | SN74AHCT1G125DBVR, 296-4708-1-ND | 1 | 1 | 0.14 |
+| R8,R9 | RC0805FR-07100KL, 311-100KCRCT-ND | 2 | 10 | 0.36 |
+| R7 | RC0805FR-07330RL, 311-330CRCT-ND | 1 | 1 | 0.10 |
+| R10 | RC0805FR-071KL, 311-1.00KCRCT-ND | 1 | 1 | 0.10 |
+| Battery pad leads | Adafruit 1954 wire pack, 1528-1964-ND | 1 pair | 1 pack | 1.95 |
+| Q1,Q2 | AO3401A, 785-1001-1-ND | 2 | 2 | 1.04 |
+| C1,C6-C18 | CC0805KRX7R9BB104 100nF 50V X7R 0805, 311-1140-1-ND | 14 | 14 | 1.37 |
+| C4 | CL32B226KOJNNNE 22uF 16V X7R 1210, 1276-1855-1-ND | 1 | 1 | 0.64 |
+| SW7 | JS102011SAQN, 401-1999-1-ND | 1 | 1 | 0.90 |
+| Battery | Adafruit 1578 protected 500mAh, 1528-1841-ND | 1 | 1 | 7.95 |
 
-## Owned / reused
+Use the PCB-mounted C&K SW7. The earlier remote SK12D07 switch plan is superseded. Verify JST polarity before connecting the battery. The 500mAh battery measures 29x36x4.75mm and is rated 500mA maximum continuous discharge; this build reserves battery power for the controller, not LEDs. It has less runtime than the earlier 1200mAh option. The XIAO provides charging; no separate charger is needed.
 
-| Part | Quantity |
-|---|---:|
-| MX-style PCB switches | 6 |
-| White blank DSA MX keycaps | 6 |
-| 1N4148 DO-35 | 8 |
-| EC11E with push switch | 2 |
-| SK6812 MINI-E reverse mount | 12 |
-| M3x16 screws | 4 |
-| M3 heat-set inserts, 5 mm OD × 4 mm long | 4 |
+Owned: six MX switches, six DSA keycaps, eight 1N4148 diodes, two EC11 encoders with clicks, twelve SK6812 MINI-E LEDs, four M3x16 screws, four 5mm OD x 4mm heat-set inserts. Solder bridges cost no extra components. Salvaged parts have not been electrically qualified.
 
-## Buy
+Optional later: U2 MCP23008-E/SO; R1/R2 4.7k; R3 10k; C2 100nF; U3 TPS61023DRLR; L1 SRP5030T-1R0M; D9/D10 B340A-13-F; C3 C1206C106K8RACTU 10uF; C5 CL32B226KOJNNNE 22uF; R4 732k; R5/R6 100k. All corresponding footprints remain on the PCB. See Build-options.md before populating them.
 
-| Ref | Part | Needed | Buy | USD | Link |
-|---|---|---:|---:|---:|---|
-| U1 | Seeed XIAO ESP32-S3 113991114 (regular) | 1 | 1 | $7.49 | [Buy](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/113991114/19285530) |
-| U2 | Microchip MCP23008-E/P PDIP-18 | 1 | 1 | $1.54 | [Buy](https://www.digikey.com/en/products/detail/microchip-technology/MCP23008-E-P/735951) |
-| U3 | TI TPS61023DRLR SOT-563 | 1 | 1 | $1.38 | [Buy](https://www.digikey.com/en/products/detail/texas-instruments/TPS61023DRLR/11310629) |
-| U4 | TI SN74AHCT1G125DBVR SOT-23-5 | 1 | 1 | $0.14 | [Buy](https://www.digikey.com/en/products/detail/texas-instruments/SN74AHCT1G125DBVR/376028) |
-| Q1,Q2 | AOS AO3401A P-channel SOT-23 | 2 | 2 | $1.04 | [Buy](https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AO3401A/1855773) |
-| SW7 | C&K JS102011SAQN | 1 | 1 | $0.90 | [Buy](https://www.digikey.com/en/products/detail/c-k/JS102011SAQN/1640095) |
-| L1 | Bourns SRP5030T-1R0M 1uH | 1 | 1 | $1.08 | [Buy](https://www.digikey.com/en/products/detail/bourns-inc/SRP5030T-1R0M/3986079) |
-| D9,D10 | Diodes Inc. B340A-13-F, 3 A 40 V Schottky, SMA | 2 | 2 | $1.08 | [Buy](https://www.digikey.com/en/products/detail/diodes-incorporated/B340A-13-F/725015) |
-| C1,C2,C6–C18 | Yageo CC0805KRX7R9BB104 — 100 nF, 50 V, X7R, 0805 | 15 | 15 | $1.47 | [Buy](https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R9BB104/302874) |
-| C3 | KEMET C1206C106K8RACTU, 10 uF 10 V X7R 1206 | 1 | 1 | $1.02 | [Buy](https://www.digikey.com/en/products/detail/kemet/C1206C106K8RACTU/1090842) |
-| C4,C5 | Samsung CL32B226KOJNNNE, 22 uF 16 V X7R 1210 | 2 | 2 | $1.28 | [Buy](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL32B226KOJNNNE/3887513) |
-| R1,R2 | Yageo RC0805FR-074K7L, 4.7k 1% 0805 | 2 | 2 | $0.20 | [Buy](https://www.digikey.com/en/products/detail/yageo/RC0805FR-074K7L/727929) |
-| R3 | Yageo RC0805FR-0710KL, 10k 1% 0805 | 1 | 1 | $0.10 | [Buy](https://www.digikey.com/en/products/detail/yageo/RC0805FR-0710KL/727535) |
-| R4 | Yageo RC0805FR-07732KL, 732k 1% 0805 | 1 | 1 | $0.10 | [Buy](https://www.digikey.com/en/products/detail/yageo/RC0805FR-07732KL/728131) |
-| R5,R6,R8,R9 | Yageo RC0805FR-07100KL, 100k 1% 0805 | 4 | 10 | $0.36 | [Buy](https://www.digikey.com/en/products/detail/yageo/RC0805FR-07100KL/727544) |
-| R7 | Yageo RC0805FR-07330RL, 330 ohm 1% 0805 | 1 | 1 | $0.10 | [Buy](https://www.digikey.com/en/products/detail/yageo/RC0805FR-07330RL/727866) |
-| R10 | Yageo RC0805FR-071KL, 1k 1% 0805 | 1 | 1 | $0.10 | [Buy](https://www.digikey.com/en/products/detail/yageo/RC0805FR-071KL/727444) |
-| J1 | JST B2B-PH-K-S(LF)(SN), vertical 2 mm | 1 | 1 | $0.12 | [Buy](https://www.digikey.com/en/products/detail/jst-sales-america-inc/B2B-PH-K-S/926611) |
-| U1 sockets | Sullins PPTC071LFBN-RC, 2.54 mm 1x7 female socket | 2 | 2 | $1.16 | [Buy](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC071LFBN-RC/810146) |
-| U1 headers | Seeed 102010490, five-pack of 7-pin male headers | 2 strips | 1 | $0.25 | [Buy](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/102010490/19176770) |
-| BAT1 | Adafruit 258, protected 1S 1200 mAh LiPo, 34 x 62 x 5 mm | 1 | 1 | $9.95 | [Buy](https://www.digikey.com/en/products/detail/adafruit-industries-llc/258/5054544) |
-| Battery leads | Adafruit 1954, 28 AWG jumper-wire pack; use red/black conductors | 1 pair | 1 | $1.95 | [Buy](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1954/6827087) |
-
-The 1200 mAh battery replaces the 1500 mAh pack: 20% less nominal capacity. Use the revised base tray with wider battery guides. Match JST polarity to the PCB before connecting. Keep RGB brightness at 64/255 and Wi-Fi off pending physical current testing; the battery is rated for 1.2 A continuous discharge. USB, Bluetooth, six keys, two encoder clicks, and 12 RGB LEDs remain in the hardware design.
-
-Cart Web ID: 377933578. Cart rows 1–8 are unrelated existing items ($6.76 plus $1.58 tariffs), excluded above. The full cart displays $52.83 including them. The old 1500 mAh battery is saved for later. No order placed. Ground shipping and tariffs are estimates; destination-specific tax and any lithium surcharge require checkout confirmation.
+[Live cart](https://www.digikey.com/ordering/shoppingcart) · [Battery specifications](https://www.adafruit.com/product/1578) · [Battery datasheet](https://cdn-shop.adafruit.com/product-files/1578/Datasheet.pdf)

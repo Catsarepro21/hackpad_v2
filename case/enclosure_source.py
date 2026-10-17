@@ -23,8 +23,8 @@ for x,y in mounts:
 # USB cable access at the rear/top edge, switch access on the right.
 base=base.cut(box(91,-64,5,16,8,11))
 base=base.cut(box(133,-130,3,10,13,9))
-# Battery guides provide 66.2 mm width for the Adafruit 258 battery clearance envelope.
-for x in [57,125]:base=base.union(box(x,-117,-15,1.8,38,2))
+# Battery guides provide 40.2 mm width for the Adafruit 1578 clearance envelope.
+for x in [70,112]:base=base.union(box(x,-117,-15,1.8,33,2))
 # Plate thickness follows MX switch clips; tall encoder housings pass through square apertures.
 plate=roundbox(cx,cy,4.25,90,84,1.5,6)
 for x in [72,91.05,110.1]:
@@ -80,10 +80,20 @@ expl.add(base.translate((0,0,-13)),name='Base_tray',color=cq.Color(.13,.17,.22))
 expl.add(plate.translate((0,0,30)),name='MX_switch_plate',color=cq.Color(.75,.81,.86))
 expl.add(pcb,name='PCB_reference')
 expl.export(str(out/'Hackpad_V2_exploded.step'))
-report={'base_valid':base.val().isValid(),'plate_valid':plate.val().isValid(),'base_solids':len(base.solids().vals()),'plate_solids':len(plate.solids().vals()),'outer_mm':[90,84,23.4],'pcb_mm':[84,78,1.6],'plate_thickness_mm':1.5,'under_pcb_clearance_mm':16,'mount_holes_mm':mounts,'pcb_bottom_z_mm':0,'plate_bottom_z_mm':3.5,'plate_top_z_mm':5.0,'battery_reserve_mm':[66,38,7],'battery_center_mm':[91,-117,-12.5],'integral_plate_spacers_mm':1.9,'base_plate_overlap_mm3':base.val().intersect(plate.val()).Volume()}
+report={'base_valid':base.val().isValid(),'plate_valid':plate.val().isValid(),'base_solids':len(base.solids().vals()),'plate_solids':len(plate.solids().vals()),'outer_mm':[90,84,23.4],'pcb_mm':[84,78,1.6],'plate_thickness_mm':1.5,'under_pcb_clearance_mm':16,'mount_holes_mm':mounts,'pcb_bottom_z_mm':0,'plate_bottom_z_mm':3.5,'plate_top_z_mm':5.0,'battery_reserve_mm':[40,33,7],'battery_center_mm':[91,-117,-12.5],'integral_plate_spacers_mm':1.9,'base_plate_overlap_mm3':base.val().intersect(plate.val()).Volume()}
 json.dump(report,open(out/'Enclosure-checks.json','w'),indent=2)
 print(json.dumps(report),flush=True)
 
 
 
 
+
+battery=box(91,-117,-12.5,36,29,4.75)
+reserve=box(91,-117,-12.5,40,33,7)
+report['battery_mm']=[36,29,4.75]
+report['battery_to_base_overlap_mm3']=battery.val().intersect(base.val()).Volume()
+report['battery_to_plate_overlap_mm3']=battery.val().intersect(plate.val()).Volume()
+report['reserve_to_pcb_overlap_mm3']=sum(reserve.val().intersect(s).Volume() for s in ref.solids().vals())
+report['battery_fit_scope']='Rectangular manufacturer envelope; flexible leads, adhesive restraint and physical tolerances require assembly check.'
+json.dump(report,open(out/'Enclosure-checks.json','w'),indent=2)
+print(json.dumps(report),flush=True)

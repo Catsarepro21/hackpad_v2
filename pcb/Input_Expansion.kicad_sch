@@ -661,7 +661,8 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -673,7 +674,8 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -724,136 +726,429 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(symbol
-		(lib_id "Interface_Expansion:MCP23008-xP")
-		(at 116.84 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ca5fd217-61e7-4614-b6ff-839df0e9a953")
-		(property "Reference" "U2"
-			(at 139.7 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+		(symbol "Interface_Expansion:MCP23008-xSO"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -8.89 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Value" "MCP23008-xP"
-			(at 149.86 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "Value" "MCP23008-xSO"
+				(at 8.89 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Footprint" "Package_DIP:DIP-18_W7.62mm"
-			(at 116.84 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "Footprint" "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm"
+				(at 0 -26.67 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"
-			(at 149.86 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"
+				(at 33.02 -30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Description" "8-bit I/O expander, I2C, interrupts, PDIP-18"
-			(at 116.84 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "Description" "8-bit I/O expander, I2C, interrupts, SOIC-18"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "4e8dff9b-8bc4-4b4f-a4d0-fb5225e3982f")
-		)
-		(pin "10"
-			(uuid "393b036b-d76c-4227-840b-1c7858159fac")
-		)
-		(pin "11"
-			(uuid "45b68e60-d14d-4ddb-a92f-0dbe3cb7c73d")
-		)
-		(pin "12"
-			(uuid "7b1d3186-ca0a-4010-91ce-f2f9f8a17de1")
-		)
-		(pin "13"
-			(uuid "1881d7c1-086d-47c4-bcf5-4a13d7e4d666")
-		)
-		(pin "14"
-			(uuid "36b16ee4-209b-4edd-84be-4e7c64ccdba3")
-		)
-		(pin "15"
-			(uuid "9fb909c4-ae8a-4fea-953d-4f67da509cd8")
-		)
-		(pin "16"
-			(uuid "79bb1542-dba4-4cb6-a7a7-4802719af1b9")
-		)
-		(pin "17"
-			(uuid "61d4de37-6183-4d55-9798-d1aab14b2d7f")
-		)
-		(pin "18"
-			(uuid "ff9560be-7a43-46d1-b2a4-3bb7f921370b")
-		)
-		(pin "2"
-			(uuid "d16db48c-841b-4b3f-8884-23bf558e14c2")
-		)
-		(pin "3"
-			(uuid "cd581108-fa37-47d5-9b61-f398b8a6d31b")
-		)
-		(pin "4"
-			(uuid "fc3ce245-10b6-4055-bdf8-f72b85119ad7")
-		)
-		(pin "5"
-			(uuid "0376c69f-5bdb-4daa-ad47-e921505b6d4c")
-		)
-		(pin "6"
-			(uuid "fba857a9-37b3-4c90-a355-e4f82ff812b9")
-		)
-		(pin "7"
-			(uuid "051c137f-b3f7-4ef9-bbca-a20651ec9d75")
-		)
-		(pin "8"
-			(uuid "ce64e30a-b306-4a37-bb8c-4b6776a438a1")
-		)
-		(pin "9"
-			(uuid "22fad9b2-90d7-4e1c-9fef-fe0bfd61797a")
-		)
-		(instances
-			(project "Fabricate_Wireless_Macropad"
-				(path "/24af3139-98ac-4ed0-b313-5c2ea4f6f921"
-					(reference "U2")
-					(unit 1)
-				)
-				(path "/eae26e58-6f77-4657-abf4-2b51d059bce3/0ae5ae52-a859-4710-ad5e-fe4e0cea6db1"
-					(reference "U2")
-					(unit 1)
+			(property "ki_keywords" "I2C parallel port expander"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
+			(property "ki_fp_filters" "SOIC*7.5x11.6mm*P1.27mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MCP23008-xSO_0_1"
+				(rectangle
+					(start -10.16 12.7)
+					(end 10.16 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MCP23008-xSO_1_1"
+				(pin input line
+					(at -12.7 7.62 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -10.16 0)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 10.16 0)
+					(length 2.54)
+					(name "~{RESET}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "INT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "INT" open_collector line)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 10.16 180)
+					(length 2.54)
+					(name "GP0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 7.62 180)
+					(length 2.54)
+					(name "GP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "GP2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "GP3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "GP4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "GP5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "GP6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -7.62 180)
+					(length 2.54)
+					(name "GP7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
 	)
 	(symbol
@@ -865,7 +1160,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8ad70b9e-72d5-4439-bb63-d6e9302ea376")
 		(property "Reference" "R3"
 			(at 68.58 48.26 0)
@@ -948,7 +1243,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a404894c-e660-49dd-9463-b5e079541607")
 		(property "Reference" "C2"
 			(at 171.45 83.82 0)
@@ -1035,7 +1330,7 @@
 		(uuid "20c5229d-98e2-4647-a5ea-e8e66cb82dfe")
 	)
 	(global_label "SDA"
-		(at 104.14 83.82000000000001 180)
+		(at 104.14 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1055,7 +1350,7 @@
 		(uuid "c25fb7e4-114b-4f02-80ee-2795d61a81a6")
 	)
 	(global_label "GND"
-		(at 104.14 96.52000000000001 180)
+		(at 104.14 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1075,7 +1370,7 @@
 		(uuid "dc6c80e8-4ec6-4f20-bfb4-59fc25577a94")
 	)
 	(global_label "IO_RESET"
-		(at 104.14 78.74000000000001 180)
+		(at 104.14 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1095,7 +1390,7 @@
 		(uuid "1077a5c1-aa53-454a-a0da-58dd05dbd1ba")
 	)
 	(global_label "ROW0"
-		(at 129.54 78.74000000000001 0)
+		(at 129.54 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1115,7 +1410,7 @@
 		(uuid "61b9652f-bbd6-4adf-a22f-63bb5eecdcd9")
 	)
 	(global_label "COL0"
-		(at 129.54 83.82000000000001 0)
+		(at 129.54 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1145,7 +1440,7 @@
 		(uuid "e80f4c0d-5647-4560-8351-416bd51be913")
 	)
 	(global_label "COL3"
-		(at 129.54 91.44000000000001 0)
+		(at 129.54 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1155,7 +1450,7 @@
 		(uuid "a5d90aa2-320f-42c2-9df0-d7b8a8d8abfe")
 	)
 	(global_label "+3V3"
-		(at 116.84 73.66000000000001 90)
+		(at 116.84 73.66 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1165,7 +1460,7 @@
 		(uuid "ec454f76-2440-4af3-8064-f8674479c409")
 	)
 	(global_label "+3V3"
-		(at 71.12 44.449999999999996 90)
+		(at 71.12 44.45 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1205,7 +1500,7 @@
 		(uuid "883c98ad-8199-4a02-b371-25e0dcf4ec30")
 	)
 	(no_connect
-		(at 106.68 91.44000000000001)
+		(at 106.68 91.44)
 		(uuid "47105dec-cfa8-48d7-ad69-f08a60095c80")
 	)
 	(no_connect
@@ -1217,8 +1512,144 @@
 		(uuid "a0d828ca-01d5-4c1e-b48d-53dddf804d5e")
 	)
 	(no_connect
-		(at 129.54 96.52000000000001)
+		(at 129.54 96.52)
 		(uuid "41d0a2d2-77b8-4e8c-be89-cb3cce2b0c94")
+	)
+	(symbol
+		(lib_id "Interface_Expansion:MCP23008-xSO")
+		(at 116.84 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "698f03f9-556f-48e6-b990-ceadac721242")
+		(property "Reference" "U2"
+			(at 107.95 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP23008-E/SO"
+			(at 125.73 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm"
+			(at 116.84 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"
+			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "8-bit I2C I/O expander, SOIC-18 wide, 1.27 mm pitch"
+			(at 116.84 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MCP23008-E/SO"
+			(at 116.84 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79563aac-6556-4ed4-9e83-811458ef1866")
+		)
+		(pin "10"
+			(uuid "a81cea78-6e18-4ad7-9e2c-b95eb888ead3")
+		)
+		(pin "11"
+			(uuid "8b1c92c2-e4bc-49d2-9dc0-ab37a5ebce13")
+		)
+		(pin "12"
+			(uuid "ab807977-5f08-4925-8cce-f97aa5c2ccb5")
+		)
+		(pin "13"
+			(uuid "0b6e1996-f85c-4439-ac8a-fe4329f7c007")
+		)
+		(pin "14"
+			(uuid "fd7a53cb-1e24-449f-875e-c1517b441370")
+		)
+		(pin "15"
+			(uuid "fd997dcc-6094-4b55-a9cf-ad8b31d0de05")
+		)
+		(pin "16"
+			(uuid "b4bc06de-237d-4a1c-b485-3a93247bdb47")
+		)
+		(pin "17"
+			(uuid "8621f00f-cea0-443b-9f62-ff193ca1b17c")
+		)
+		(pin "18"
+			(uuid "c7c6088f-72f4-4c2d-baa7-e5d7e8cf61c1")
+		)
+		(pin "2"
+			(uuid "7e27bb22-ab1e-4881-a172-b462ea943dab")
+		)
+		(pin "3"
+			(uuid "3fb20a0f-dbc7-481c-81f1-fc8fa70756a2")
+		)
+		(pin "4"
+			(uuid "b5367aa5-b04e-4be7-aa26-f86597645099")
+		)
+		(pin "5"
+			(uuid "680bf9ff-54bc-4772-9fe2-d4b447699049")
+		)
+		(pin "6"
+			(uuid "792c29b3-2701-4c0c-b23e-710349e1ae6a")
+		)
+		(pin "7"
+			(uuid "d84cec47-d4f3-4fc7-bb6e-cf325f7076bb")
+		)
+		(pin "8"
+			(uuid "d82e0894-5333-40e5-ae52-42a6aa481918")
+		)
+		(pin "9"
+			(uuid "2dd81edf-a3de-4d69-8703-ab867ec49992")
+		)
+		(instances
+			(project "Fabricate_Wireless_Macropad"
+				(path "/eae26e58-6f77-4657-abf4-2b51d059bce3/0ae5ae52-a859-4710-ad5e-fe4e0cea6db1"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet_instances
 		(path "/"
