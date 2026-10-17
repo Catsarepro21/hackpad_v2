@@ -1,7 +1,6 @@
 # hackpad_v2
 
-A wireless six-key macropad with a Seeed XIAO ESP32-S3, two clickable rotary encoders, and twelve SK6812 MINI-E RGB LEDs. The simple build powers RGB only from USB and uses a protected 500mAh battery for the controller. The PCB retains all original expander and battery RGB footprints for later upgrades. It uses normal 19.05 mm key spacing and an internal battery connector, uses parts left over from my other hackpad, which was much worse.
-
+A wireless six-key macropad with a Seeed XIAO ESP32-S3, two clickable rotary encoders, and twelve SK6812 MINI-E RGB LEDs. The simple version only powers on RGB when USB is connected, but the new parts can easily be added later.
 ![Macropad enclosure](images/Onshape-enclosure.jpg)
 
 ## Files
