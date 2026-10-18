@@ -3,7 +3,7 @@ title: "Hackpad"
 github: "https://github.com/Catsarepro21/hackpad_v2"
 description: "A(nother) custom hackpad! I made one before for Keeb but it was really bad because I wasn't that good at PCB's, so i'm making a much better one, and I even have some parts left over."
 created_at: "2026-10-15"
-total_time: "4h 30m"
+total_time: "6h"
 ---
 
 # October 15, 2026: Schematic, PCB, code, and case, so pretty much everything
@@ -28,3 +28,19 @@ After that i made the case in onshape, I imported the PCB and just added a margi
 Finally I made really basic code pretty quickly using Arduino IDE, and i did use Gemini's help a bit on this part but i did write it myself.
 
 **Total time spent: 4h 30m**
+
+# October 17, 2026: Cheapified
+<!-- fabricate:entry 619 -->
+
+I simplified the hackpad to bring the estimated parts order down to **$34.07 before tax**:
+
+- Connected the keys and encoder clicks directly to the XIAO, so I don’t need to populate the MCP23008 or its supporting parts.
+- Made RGB USB-only, letting me leave the battery RGB boost converter and its supporting parts unpopulated.
+- Kept those extra footprints on the PCB so I can add the features later.
+- Switched to a smaller protected 500mAh battery and used the XIAO’s built-in charger.
+- Reused my existing switches, keycaps, encoders, LEDs, diodes, screws, and inserts.
+- Consolidated the new parts into one DigiKey order.
+
+![](https://fabricate.hackclub-assets.com/ea7b262b9ecc8e9b3bc75cfbf06daba572af6878d270d3e00efcf92fac2a871f/image-png/image.png)
+
+**Total time spent: 1h 30m**
