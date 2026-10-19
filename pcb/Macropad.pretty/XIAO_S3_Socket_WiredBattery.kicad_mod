@@ -279,5 +279,15 @@
 		(remove_unused_layers no)
 		(uuid "b6b4f25d-9c74-4b57-9579-754c47d8b26e")
 	)
+	(model "${KIPRJMOD}/models/XIAO-ESP32S3 v2.step"
+		(offset (xyz -1.740658686 -6.111399955 11.29))
+		(scale (xyz 1 1 1))
+		(rotate (xyz -90 0 0))
+	)
+	(model "${KIPRJMOD}/models/PPTC071LFBN_socket_header_clearance_envelope.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 	(embedded_fonts no)
 )

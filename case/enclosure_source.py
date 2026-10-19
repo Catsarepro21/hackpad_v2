@@ -10,7 +10,7 @@ def roundbox(x,y,z,dx,dy,dz,r):return box(x,y,z,dx,dy,dz).edges('|Z').fillet(r)
 # Coordinates match the KiCad STEP: PCB bottom z=0, top z=1.6.
 # 0.4 mm board clearance, 2.6 mm walls, 2.4 mm floor, 16 mm under-board space.
 cx,cy=90,-105
-base=roundbox(cx,cy,(-18.4+3.5)/2,90,84,21.9,6)
+base=roundbox(cx,cy,(-18.4+5.1)/2,90,84,23.5,6)
 inner=roundbox(cx,cy,(-16+15)/2,84.8,78.8,31,3.4)
 base=base.cut(inner)
 mounts=[(55,-73),(127,-73),(55,-139),(127,-139)]
@@ -25,24 +25,25 @@ base=base.cut(box(91,-64,5,16,8,11))
 base=base.cut(box(132.4,-130,3,11.2,13,9))
 # Battery guides provide 40.2 mm width for the Adafruit 1578 clearance envelope.
 for x in [70,112]:base=base.union(box(x,-117,-15,1.8,33,2))
+# Cherry MX plate top is 5.0 mm above PCB top (absolute z=6.6 mm).
 # Plate thickness follows MX switch clips; tall encoder housings pass through square apertures.
-plate=roundbox(cx,cy,4.25,90,84,1.5,6)
+plate=roundbox(cx,cy,5.85,90,84,1.5,6)
 for x in [72,91.05,110.1]:
- for y in [-102,-121.05]:plate=plate.cut(box(x,y,4.25,14.05,14.05,4))
-for x in [70,113.5]:plate=plate.cut(roundbox(x,-80,4.25,15.2,15.2,4,.6))
-plate=plate.cut(roundbox(91,-79,4.25,22.4,25,4,1))
-plate=plate.cut(box(91,-64.5,4.25,16,8,4))
+ for y in [-102,-121.05]:plate=plate.cut(box(x,y,5.85,14.05,14.05,4))
+for x in [70,113.5]:plate=plate.cut(roundbox(x,-80,5.85,15.2,15.2,4,.6))
+plate=plate.cut(roundbox(91,-79,5.85,22.4,25,4,1))
+plate=plate.cut(box(91,-64.5,5.85,16,8,4))
 # Battery connector access and battery-pad wire clearance.
 # J1 battery connector mounts inside below PCB; cover remains closed here.
-plate=plate.cut(cq.Workplane('XY').center(102.43,-86.62).circle(2.1).extrude(4).translate((0,0,2)))
-plate=plate.cut(box(132.4,-130,4.25,11.2,13,4))
-# Integral upper spacers stop the mounting screws crushing the 1.9 mm cover gap.
+plate=plate.cut(roundbox(102.43,-85.35,5.85,4.4,7.5,4,2.0))
+plate=plate.cut(box(132.4,-130,5.85,11.2,13,4))
+# Integral upper spacers stop the mounting screws crushing the 3.5 mm cover gap.
 for x,y in mounts:
- spacer=cq.Workplane('XY').center(x,y).circle(3.5).extrude(1.9).translate((0,0,1.6))
+ spacer=cq.Workplane('XY').center(x,y).circle(3.5).extrude(3.5).translate((0,0,1.6))
  plate=plate.union(spacer)
  plate=plate.cut(cq.Workplane('XY').center(x,y).circle(1.7).extrude(7).translate((0,0,1)))
 for x,y in [(70,-90),(113.5,-90),(54.5,-81),(127.5,-97),(78,-139.5),(105,-139.5)]:
- plate=plate.cut(cq.Workplane('XY').center(x,y).circle(2.2).extrude(4).translate((0,0,2)))
+ plate=plate.cut(cq.Workplane('XY').center(x,y).circle(2.2).extrude(6).translate((0,0,2)))
 print('Case bodies built',flush=True)
 for label,obj in [('Base_tray',base),('MX_switch_plate',plate)]:
  assert len(obj.solids().vals())==1 and obj.val().isValid(),label
@@ -80,7 +81,7 @@ expl.add(base.translate((0,0,-13)),name='Base_tray',color=cq.Color(.13,.17,.22))
 expl.add(plate.translate((0,0,30)),name='MX_switch_plate',color=cq.Color(.75,.81,.86))
 expl.add(pcb,name='PCB_reference')
 expl.export(str(out/'Hackpad_V2_exploded.step'))
-report={'base_valid':base.val().isValid(),'plate_valid':plate.val().isValid(),'base_solids':len(base.solids().vals()),'plate_solids':len(plate.solids().vals()),'outer_mm':[90,84,23.4],'pcb_mm':[84,78,1.6],'plate_thickness_mm':1.5,'under_pcb_clearance_mm':16,'mount_holes_mm':mounts,'pcb_bottom_z_mm':0,'plate_bottom_z_mm':3.5,'plate_top_z_mm':5.0,'battery_reserve_mm':[40,33,7],'battery_center_mm':[91,-117,-12.5],'integral_plate_spacers_mm':1.9,'base_plate_overlap_mm3':base.val().intersect(plate.val()).Volume()}
+report={'base_valid':base.val().isValid(),'plate_valid':plate.val().isValid(),'base_solids':len(base.solids().vals()),'plate_solids':len(plate.solids().vals()),'outer_mm':[90,84,25.0],'pcb_mm':[84,78,1.6],'plate_thickness_mm':1.5,'under_pcb_clearance_mm':16,'mount_holes_mm':mounts,'pcb_bottom_z_mm':0,'plate_bottom_z_mm':5.1,'plate_top_z_mm':6.6,'battery_reserve_mm':[40,33,7],'battery_center_mm':[91,-117,-12.5],'integral_plate_spacers_mm':3.5,'base_plate_overlap_mm3':base.val().intersect(plate.val()).Volume()}
 json.dump(report,open(out/'Enclosure-checks.json','w'),indent=2)
 print(json.dumps(report),flush=True)
 

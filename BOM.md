@@ -1,6 +1,6 @@
 # Simple build shopping list
 
-DigiKey cart Web ID **378036726**, checked October 16, 2026: **$23.57 parts + $8.49 estimated ground shipping + $2.01 estimated tariffs = $34.07 before sales tax**. At that check, all 14 lines showed Immediate availability; the cart also warns of an additional processing day. These are saved cart prices, not a refreshed checkout quote. No LCSC order is needed for this population. Do not purchase both old carts and this one.
+DigiKey cart Web ID **378054863**, rebuilt and captured October 17, 2026: **$23.57 parts + $8.49 estimated ground shipping + $2.01 estimated tariffs = $34.07 before sales tax**. At that capture, all 14 lines showed Immediate availability; the cart also warns of an additional processing day. These are saved cart prices, not a refreshed checkout quote. No LCSC order is needed for this population. Do not purchase both old carts and this one.
 
 A rough 7.25-7.5% tax allowance gives about $36.54-$36.63 if applied to the entire $34.07; actual taxable base, delivery address and checkout determine the final total. ZIP 27560 alone does not establish an exact tax quote. PCB fabrication, its delivery, case printing and consumables remain unquoted. No order placed.
 
@@ -27,7 +27,7 @@ Owned: six MX switches, six DSA keycaps, eight 1N4148 diodes, two EC11 encoders 
 
 Optional later: U2 MCP23008-E/SO; R1/R2 4.7k; R3 10k; C2 100nF; U3 TPS61023DRLR; L1 SRP5030T-1R0M; D9/D10 B340A-13-F; C3 C1206C106K8RACTU 10uF; C5 CL32B226KOJNNNE 22uF; R4 732k; R5/R6 100k. All corresponding footprints remain on the PCB. See [build instructions](pcb/Build-options.md) before populating them.
 
-[Live cart](https://www.digikey.com/ordering/shoppingcart) · [Battery specifications](https://www.adafruit.com/product/1578) · [Battery datasheet](https://cdn-shop.adafruit.com/product-files/1578/Datasheet.pdf)
+[Shared rebuilt cart](https://www.digikey.com/short/m3zh375z) · [Battery specifications](https://www.adafruit.com/product/1578) · [Battery datasheet](https://cdn-shop.adafruit.com/product-files/1578/Datasheet.pdf)
 
 ## Assembly coverage
 
@@ -62,10 +62,10 @@ Other assembly items: six owned DSA keycaps, one fabricated 84 x 78 mm two-layer
 
 ## Assembly details and remaining checks
 
-The two U1 sockets are 7-way, 2.54 mm pitch PPTC071LFBN-RC. The male-header pack is Seeed 102010490 (DigiKey 1597-102010490-ND), containing five 7-pin strips; two strips are needed. Socket insulation height is 8.51 mm. The supplied XIAO STEP is not a qualified model of this exact mated socket/header stack: confirm module height and USB plug access in the actual socketed assembly before printing a final case batch. Solder the two battery leads directly between XIAO BAT pads and the labeled carrier BAT+/BAT- pads; Adafruit 1954 supplies 20 wires, so cut and strip two suitable leads rather than relying on loose jumper contacts for battery power.
+The two U1 sockets are 7-way, 2.54 mm pitch PPTC071LFBN-RC. The male-header pack is Seeed 102010490 (DigiKey 1597-102010490-ND), containing five 7-pin strips; two strips are needed. The manufacturer drawing gives 8.50 mm socket insulation height (the catalog rounds this to 8.51 mm). The corrected CAD represents a nominal 11.04 mm gap from carrier-board top to XIAO PCB underside: 8.50 mm socket housing plus an assumed 2.54 mm male-header plastic height. The male-header height and final seating have not been verified for the exact purchased strip. Confirm actual module height, secure mating and USB plug/cable clearance in the first assembly before printing a final case batch; the nominal envelope does not qualify the exact mated connector stack. Solder the two battery leads directly between XIAO BAT pads and the labeled carrier BAT+/BAT- pads; Adafruit 1954 supplies 20 wires, so cut and strip two suitable leads rather than relying on loose jumper contacts for battery power.
 
 The battery is protected Adafruit 1578, with a JST-PH plug matching the 2 mm J1 connector family; measure connector polarity before connection. Switch ON to charge. RGB remains USB-only. Read the [release audit](docs/Release-audit.md) before treating this as a tested production assembly; firmware/direct-matrix scanning, MX plate fit and powered operation remain unverified.
 
-Source checks, October 17, 2026: [socket dimensions and pitch](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC071LFBN-RC/810146), [Seeed module specification and supplied antenna](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6209/Seeed%20113991114.pdf), [wire pack contents](https://www.adafruit.com/product/1954), [protected battery dimensions](https://www.adafruit.com/product/1578). The saved October 16 cart establishes the listed prices; current stock, shipping, tariffs and tax must be reconfirmed at checkout.
+Source checks, October 17, 2026: [socket dimensions and pitch](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC071LFBN-RC/810146), [Seeed module specification and supplied antenna](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6209/Seeed%20113991114.pdf), [wire pack contents](https://www.adafruit.com/product/1954), [protected battery dimensions](https://www.adafruit.com/product/1578). The rebuilt October 17 cart establishes the listed prices; current stock, shipping, tariffs and tax must be reconfirmed at checkout.
 
-R8/R9 order quantity: only two are installed; the BOM budgets ten for $0.36 (eight spares). [DigiKey currently lists ten at $0.036 each](https://www.digikey.com/en/products/detail/yageo/RC0805FR-07100KL/727544). The saved cart field showed two despite ten-unit price math, so set the intended order quantity and refresh before checkout. Buying just two is also valid; the current catalog lists $0.11 each, but checkout totals must be recalculated.
+R8/R9 order quantity: two are installed; the rebuilt October 17 cart correctly orders ten for $0.36 (eight spares). The older cart's inconsistent quantity field is superseded. The saved $34.07 estimate is before tax and must be refreshed at checkout.

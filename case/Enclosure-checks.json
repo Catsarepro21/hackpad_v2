@@ -6,7 +6,7 @@
   "outer_mm": [
     90,
     84,
-    23.4
+    25.0
   ],
   "pcb_mm": [
     84,
@@ -34,8 +34,8 @@
     ]
   ],
   "pcb_bottom_z_mm": 0,
-  "plate_bottom_z_mm": 3.5,
-  "plate_top_z_mm": 5.0,
+  "plate_bottom_z_mm": 5.1,
+  "plate_top_z_mm": 6.6,
   "battery_reserve_mm": [
     40,
     33,
@@ -46,7 +46,7 @@
     -117,
     -12.5
   ],
-  "integral_plate_spacers_mm": 1.9,
+  "integral_plate_spacers_mm": 3.5,
   "base_plate_overlap_mm3": 0.0,
   "battery_mm": [
     36,

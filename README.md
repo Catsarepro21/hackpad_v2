@@ -1,7 +1,9 @@
 # hackpad_v2
 
 A wireless six-key macropad with a Seeed XIAO ESP32-S3, two clickable rotary encoders, and twelve SK6812 MINI-E RGB LEDs. The simple version only powers on RGB when USB is connected, but the new parts can easily be added later.
-![Macropad enclosure](images/Onshape-enclosure.jpg)
+![Earlier Onshape enclosure reference](images/Onshape-enclosure.jpg)
+
+*Earlier reference image; use the local STEP/STL files for the corrected case.*
 
 ## Files
 
@@ -25,6 +27,6 @@ A wireless six-key macropad with a Seeed XIAO ESP32-S3, two clickable rotary enc
 - [Printable base](case/Base_tray.stl) / [plate](case/MX_switch_plate.stl)
 
 
-The latest STEP is exported from the current PCB and the case opening clears the slide-switch travel envelope. See [release audit](docs/Release-audit.md): electrical CAD checks pass; MX plate fit, socketed XIAO/USB clearance and firmware/hardware testing still prevent a production-qualified sign-off.
+The PCB STEP is exported from the current native PCB. The corrected 1.5 mm plate spans z=5.1–6.6 mm above the PCB-bottom datum, and the case is 90 x 84 x 25.0 mm. Model origins and the nominal socketed XIAO height were corrected. See the [case notes](case/README.md) and [release audit](docs/Release-audit.md): exact owned-part fit, header seating, USB cable access and hardware/firmware testing still prevent a production-qualified sign-off.
 
-The [BOM](BOM.md) lists the 14 shopping lines plus all owned, DNP, jumper and mounting references. Prices are the saved October 16 cart; shipping, tax, PCB fabrication and printing are not a final delivered quote. [code/code.ino](code/code.ino) is the unchanged expander-based firmware and requires the direct-matrix changes described in the build instructions.
+The [BOM](BOM.md) lists the 14 shopping lines plus all owned, DNP, jumper and mounting references. Prices are the rebuilt October 17 cart; shipping, tax, PCB fabrication and printing are not a final delivered quote. [code/code.ino](code/code.ino) is the unchanged expander-based firmware and requires the direct-matrix changes described in the build instructions.

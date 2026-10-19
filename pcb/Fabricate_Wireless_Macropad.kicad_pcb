@@ -485,7 +485,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/models/EC11-THT-20F-blue.step"
 			(offset
-				(xyz 7.5 -2.5 0.5)
+				(xyz 7.5 -2.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -871,7 +871,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
-				(xyz -2.5 -4 0)
+				(xyz -2.604375781 -4.082074272 1.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -882,7 +882,7 @@
 		)
 		(model "${KIPRJMOD}/models/DSA_Keycap_CherryMX.step"
 			(offset
-				(xyz -2.5 -5 8)
+				(xyz -2.54 -5.08 9.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1162,7 +1162,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
-				(xyz -2.5 -4 0)
+				(xyz -2.604375781 -4.082074272 1.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1173,7 +1173,7 @@
 		)
 		(model "${KIPRJMOD}/models/DSA_Keycap_CherryMX.step"
 			(offset
-				(xyz -2.5 -5 8)
+				(xyz -2.54 -5.08 9.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1453,7 +1453,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
-				(xyz -2.5 -4 0)
+				(xyz -2.604375781 -4.082074272 1.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1464,7 +1464,7 @@
 		)
 		(model "${KIPRJMOD}/models/DSA_Keycap_CherryMX.step"
 			(offset
-				(xyz -2.5 -5 8)
+				(xyz -2.54 -5.08 9.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1775,13 +1775,24 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/models/XIAO-ESP32S3 v2.step"
 			(offset
-				(xyz -2 -6 0)
+				(xyz -1.740658686 -6.111399955 11.28999999)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
 				(xyz -90 -0 -0)
+			)
+		)
+		(model "${KIPRJMOD}/models/PPTC071LFBN_socket_header_clearance_envelope.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -2566,7 +2577,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
-				(xyz -2.5 -4 0)
+				(xyz -2.604375781 -4.082074272 1.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2577,7 +2588,7 @@
 		)
 		(model "${KIPRJMOD}/models/DSA_Keycap_CherryMX.step"
 			(offset
-				(xyz -2.5 -5 8)
+				(xyz -2.54 -5.08 9.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2857,7 +2868,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
-				(xyz -2.5 -4 0)
+				(xyz -2.604375781 -4.082074272 1.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2868,7 +2879,7 @@
 		)
 		(model "${KIPRJMOD}/models/DSA_Keycap_CherryMX.step"
 			(offset
-				(xyz -2.5 -5 8)
+				(xyz -2.54 -5.08 9.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -3859,7 +3870,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/models/Cherry MX.STEP"
 			(offset
-				(xyz -2.5 -4 0)
+				(xyz -2.604375781 -4.082074272 1.505)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -3870,7 +3881,7 @@
 		)
 		(model "${KIPRJMOD}/models/DSA_Keycap_CherryMX.step"
 			(offset
-				(xyz -2.5 -5 8)
+				(xyz -2.54 -5.08 9.505)
 			)
 			(scale
 				(xyz 1 1 1)
