@@ -4,12 +4,18 @@ A custom macropad with 6 keys, bluetooth(ESP32-S3), battery, RGB, 2 and rotary e
 
 Files:
 
-[PCB](https://github.com/Catsarepro21/hackpad_v2/blob/main/case)
+[PCB](PCB)
 
 [Case](https://github.com/Catsarepro21/hackpad_v2/blob/main/case)
 
-[Gerbers](https://github.com/Catsarepro21/hackpad_v2/blob/main/manufacturing)
+[Gerbers](PCB/gerbers.zip)
 
 
-BOM: 
+BOM: [BOM.md](BOM.md)
 
+
+![PCB top](images/PCB-top.png)
+
+![PCB bottom](images/PCB-bottom.png)
+
+![Case](images/Onshape-enclosure.jpg)
