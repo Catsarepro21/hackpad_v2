@@ -1,7 +1,0 @@
-(version 1)
-(rule "SK6812 reverse-mount aperture"
-  (condition "A.memberOfFootprint('LED*')")
-  (constraint edge_clearance (min 0.2mm)))
-(rule "TPS61023 fine-pitch package"
-  (condition "A.memberOfFootprint('U3') && B.memberOfFootprint('U3')")
-  (constraint clearance (min 0.127mm)))

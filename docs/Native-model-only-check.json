@@ -1,5 +1,0 @@
-{
-  "only_model_blocks_changed": true,
-  "non_model_differences": [],
-  "scope": "S-expression recursively excludes only model entries; remaining full native PCB including all pads, footprints, nets, routing, zones, drill geometry, layer stack and settings compared."
-}
