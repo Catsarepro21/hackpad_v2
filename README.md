@@ -19,3 +19,5 @@ BOM: [BOM.md](BOM.md)
 ![PCB bottom](images/PCB-bottom.png)
 
 ![Case](images/Onshape-enclosure.jpg)
+
+[Onshape](https://cad.onshape.com/documents/e5e00bd96b00b1f98fd3bff8/w/d80bdedc56342f5387c6fe9a/e/f05423852afba8350f5d5474?renderMode=0&uiState=6ad917cca941be13c57e1d41)
